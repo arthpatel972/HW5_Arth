@@ -79,7 +79,7 @@ updated by AAP on June 29, 2022 at 4:00PM
 
 /*This gives double letter score to all the classes with double score*/
 .gameBoard .doubleScore {
-    background-image: url("../imgs/doubleletterScore.jpg");
+    background-image: url("../imgs/doubleletterScore.JPG");
 }
 
 /*gives height and width to the fill images*/
