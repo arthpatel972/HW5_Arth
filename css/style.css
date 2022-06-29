@@ -1,0 +1,196 @@
+/*
+File: style.css
+GUI Assignment: Scrabble Game
+Arth Patel, UMass Lowell Computer Science,Arth_patel@student.uml.edu
+
+CSS file to style the game. So, it gives the user best experience playing it.
+It also makes it look good.
+
+Copyright (c) 2022 by Arth. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AAP on June 29, 2022 at 4:00PM
+*/
+
+/*This will update the title of the html page */
+.Title {
+    background: linear-gradient(to right, black, #eee, black);;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: black;
+    font-family: 'Raleway', cursive;
+    font-size: 100px;
+    text-decoration: underline;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+
+/* This will center the game board and flex it */
+.gameBoard {
+    margin-top: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+/*It sets game width  to 50% so it looks good and centers it*/
+.game{
+    width: 50%;
+    margin: auto;
+}
+
+/*This will change how game data looks*/
+.gameData {
+    background-color: #56d480;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    padding: 15px;
+    padding-bottom: 0;
+    border: 2px solid black;
+    font-size: 26px;
+    font-weight: 500;
+
+}
+
+/*This sets the height and width of dropbox under gameboard*/
+.gameBoard .dropBox {
+    height: 92px;
+    width: 90px;
+    border: 1px solid black;
+}
+
+/*This will give a background black image to the empty class*/
+.gameBoard .empty {
+    background-image: url("../imgs/backgroundImg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*This gives double letter score to all the classes with double score*/
+.gameBoard .doubleScore {
+    background-image: url("../imgs/doubleletterScore.jpg");
+}
+
+/*This will give double word class a background image*/
+.gameBoard .doubleWord{
+    background-image: url("../imgs/doubleWordScore.JPG") ;
+}
+
+/*gives height and width to the fill images*/
+.gameBoard .fill img {
+    height: 90px;
+    width: 90px;
+}
+
+/*changes the color and aligns all the errors*/
+#err {
+    font-size: 18px;
+    color: rgb(160, 0, 16);
+    margin:auto;
+    text-align: center;
+    background-color: #f0b1a9;
+  }
+  
+/*This will update the rack*/
+#rackC {
+    position: relative;
+    display: flex;
+    align-content: center;
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    margin-top: 55px;
+  }
+
+/* gives width and z index to rackimg*/
+.rackImg {
+    width: 100%;
+    position: absolute;
+    Z-INDEX: 0;
+}
+
+/*rack letters giving them space and flex them*/
+.rack {
+    z-index: 45;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 75%;
+    width: 95%;
+  }
+
+/*empty rack height and width*/
+.rack .empty {
+    height: 90px;
+    width: 90px;
+    margin-right: 0;
+}
+
+/*empty img height and width*/
+.empty img {
+    height: 90px;
+    width: 90px;
+}
+  
+/*Game button controls*/
+.gameControls {
+    display: flex;
+    justify-content: center;
+    width: 51%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 18px;
+}
+
+/*chnages the submit button*/
+.Submit_Word {
+    background: #56d480;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: black;
+    transition: background 0.2s ease;
+}
+
+/*changes the restart buttton*/
+.restart{
+    background:rgb(160, 0, 16);
+    padding: 12px;
+    margin: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+/*changes color on hover for button*/
+button:hover {
+    color: white;
+    background: #237a67;
+}
+  
+/*gives a background color to the body and also a great color changing effect*/
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

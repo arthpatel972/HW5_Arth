@@ -1,0 +1,75 @@
+<!--
+File: index.html
+GUI Assignment: Scrabble Game
+Arth Patel, UMass Lowell Computer Science,Arth_patel@student.uml.edu
+
+HTML file used to name all the div class id and and link all the files for the game
+
+Copyright (c) 2022 by Arth. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AAP on June 29, 2022 at 4:00PM
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Scrabble Game</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="javascript/script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div class="Title">
+        <h3>Scrabble Game</h3>
+    </div>
+<section class="GameBackground">
+    <!-- contains the scrabble board -->
+    <div class="game">
+        <!-- game info -->
+        <div class="gameData">
+            <p>Letters Left: <span class="remainingLetters">-</span></p>
+            <p>Score: <span class="score">-</span></p>
+            <p>Total Score: <span class="totalScore">-</span></p>
+        </div>
+        
+        <!-- game baord -->
+        <div class="gameBoard">
+            <div class="empty dropBox first"></div>
+            <div class="empty dropBox doubleScore"></div>
+            <div class="empty dropBox"></div>
+            <div class="empty dropBox doubleWord"></div>
+            <div class="empty dropBox"></div>
+            <div class="empty dropBox doubleScore"></div>
+            <div class="empty dropBox doubleWord last"></div>
+        </div>
+
+        <!-- log the error messages for user -->
+        <p id="err"></p>
+    </div>
+
+    <div class="gameControls">
+        <button type="button" class="Submit_Word">Submit Word</button>    
+    </div>
+
+    <!-- the rack-->
+    <div id="rackC">
+        <!-- the rack -->
+        <img src="imgs/rack.png" class="rackImg" draggable="false">
+        <div class="rack">
+            <div class="empty rackLetters"></div>
+            <div class="empty rackLetters"></div>
+            <div class="empty rackLetters"></div>
+            <div class="empty rackLetters"></div>
+            <div class="empty rackLetters"></div>
+            <div class="empty rackLetters"></div>
+            <div class="empty rackLetters"></div>
+        </div>
+    </div>
+    <div class="gameControls">
+        <button type="button" class="restart">Restart The Game</button>
+    </div>
+
+</section>
+</body>
+</html>
