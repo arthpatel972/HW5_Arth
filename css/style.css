@@ -74,12 +74,12 @@ updated by AAP on June 29, 2022 at 4:00PM
 
 /*This will give double word class a background image*/
 .gameBoard .doubleWord{
-    background-image: url("../imgs/doubleWordScore.JPG") ;
+    background-image: url("../imgs/doubleWordScore.jpg") ;
 }
 
 /*This gives double letter score to all the classes with double score*/
 .gameBoard .doubleScore {
-    background-image: url("../imgs/doubleletterScore.JPG");
+    background-image: url("../imgs/doubleletterScore.jpg");
 }
 
 /*gives height and width to the fill images*/
